@@ -1,38 +1,24 @@
-# Darian Zhao Personal Site
+# www.darianzhao.com
 
-`www.darianzhao.com` 的长期个人主页工程。
+Darian Zhao 的长期个人主页，使用 GitHub Pages 托管。
 
-当前为基础版本 `v0.1`：先建立稳定的编辑、预览、验证、发布与域名链路，再逐步补充真实经历、作品、观点与视觉表达。
+## 结构
 
-## 日常共同编辑
+- `index.html`：主页内容与语义结构
+- `styles.css`：完整视觉系统与响应式布局
+- `CNAME`：唯一正式域名 `www.darianzhao.com`
+- `robots.txt`、`sitemap.xml`：搜索引擎入口
+- `.nojekyll`：让 GitHub Pages 直接发布原始静态文件
+- `tests/static-site.test.mjs`：发布前自动验证
 
-直接在 Codex 对话中描述希望增加、修改或删除的内容即可。每次变更遵循同一条发布链路：
+站点没有数据库、登录、框架运行时或第三方脚本。GitHub Pages 直接分发 HTML 与 CSS，保持最少依赖和最大的可迁移性。
 
-1. 在本地实时预览中完成修改；
-2. 检查桌面端、手机端、语义结构与可访问性；
-3. 运行构建、自动测试、代码检查与生产依赖安全审计；
-4. 保存一个可回退的版本并发布；
-5. 验证 `www.darianzhao.com` 的线上结果。
+## 共同编辑
 
-## 主要文件
+直接在 Codex 对话中描述希望增加、修改或删除的内容即可。每次变更会先经过本地验证，再提交到 GitHub；GitHub Pages 随后自动更新 `https://www.darianzhao.com`。
 
-- `app/page.tsx`：主页内容与语义结构
-- `app/globals.css`：完整视觉系统与响应式布局
-- `app/layout.tsx`：站点标题、描述、社交分享与搜索引擎信息
-- `app/robots.ts`、`app/sitemap.ts`：搜索引擎入口
-- `tests/rendered-html.test.mjs`：上线前自动验证
-- `.openai/hosting.json`：站点发布身份，不存放密钥
-
-## 本地验证
-
-需要 Node.js `22.13.0` 或更高版本。
+## 验证
 
 ```bash
-npm ci
-npm run dev
-npm run build
-node --test tests/rendered-html.test.mjs
-npm run lint
+npm test
 ```
-
-正式域名以 `https://www.darianzhao.com` 为唯一规范地址。站点不依赖数据库、登录或外部运行时服务，保持公开主页尽可能轻量、稳定和可迁移。

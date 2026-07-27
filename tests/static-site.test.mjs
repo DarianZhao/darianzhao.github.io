@@ -1,0 +1,49 @@
+import assert from "node:assert/strict";
+import { access, readFile } from "node:fs/promises";
+import test from "node:test";
+
+const root = new URL("../", import.meta.url);
+
+test("publishes a complete semantic homepage", async () => {
+  const html = await readFile(new URL("index.html", root), "utf8");
+
+  assert.match(html, /<html lang="zh-CN">/);
+  assert.match(html, /<title>Darian Zhao · 赵达然<\/title>/);
+  assert.match(html, /<h1 id="page-title">/);
+  assert.match(html, /一个持续生长的/);
+  assert.match(html, /个人坐标系。/);
+  assert.match(html, /<link rel="stylesheet" href="\/styles\.css"/);
+});
+
+test("uses www.darianzhao.com as the only public identity", async () => {
+  const [html, cname, robots, sitemap] = await Promise.all([
+    readFile(new URL("index.html", root), "utf8"),
+    readFile(new URL("CNAME", root), "utf8"),
+    readFile(new URL("robots.txt", root), "utf8"),
+    readFile(new URL("sitemap.xml", root), "utf8"),
+  ]);
+
+  assert.equal(cname.trim(), "www.darianzhao.com");
+  assert.match(
+    html,
+    /<link rel="canonical" href="https:\/\/www\.darianzhao\.com\/"/,
+  );
+  assert.match(robots, /https:\/\/www\.darianzhao\.com\/sitemap\.xml/);
+  assert.match(sitemap, /<loc>https:\/\/www\.darianzhao\.com\/<\/loc>/);
+  assert.doesNotMatch(
+    `${html}\n${robots}\n${sitemap}`,
+    /chatgpt\.site|pages\.dev|vercel\.app/,
+  );
+});
+
+test("remains a framework-free GitHub Pages site", async () => {
+  const packageJson = JSON.parse(
+    await readFile(new URL("package.json", root), "utf8"),
+  );
+
+  assert.deepEqual(Object.keys(packageJson.scripts), ["test"]);
+  assert.equal(packageJson.dependencies, undefined);
+  assert.equal(packageJson.devDependencies, undefined);
+  await access(new URL(".nojekyll", root));
+  await assert.rejects(access(new URL(".openai/hosting.json", root)));
+});
