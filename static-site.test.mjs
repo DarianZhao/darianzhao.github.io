@@ -14,9 +14,12 @@ test("publishes a complete semantic homepage", async () => {
   assert.match(html, /个人坐标系。/);
   assert.match(html, /<link rel="stylesheet" href="\/styles\.css"/);
   assert.match(html, /<script src="\/script\.js" defer><\/script>/);
-  assert.match(html, /id="profile"/);
-  assert.match(html, /id="atlas"/);
+  assert.match(html, /id="garden"/);
+  assert.match(html, /id="essays-title"/);
+  assert.match(html, /id="notes-title"/);
+  assert.match(html, /id="patterns-title"/);
   assert.match(html, /id="now"/);
+  assert.match(html, /id="about"/);
 });
 
 test("uses www.darianzhao.com as the only public identity", async () => {
