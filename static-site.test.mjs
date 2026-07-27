@@ -9,10 +9,14 @@ test("publishes a complete semantic homepage", async () => {
 
   assert.match(html, /<html lang="zh-CN">/);
   assert.match(html, /<title>Darian Zhao · 赵达然<\/title>/);
-  assert.match(html, /<h1 id="page-title">/);
+  assert.match(html, /<h1 id="page-title"[^>]*>/);
   assert.match(html, /一个持续生长的/);
   assert.match(html, /个人坐标系。/);
   assert.match(html, /<link rel="stylesheet" href="\/styles\.css"/);
+  assert.match(html, /<script src="\/script\.js" defer><\/script>/);
+  assert.match(html, /id="profile"/);
+  assert.match(html, /id="atlas"/);
+  assert.match(html, /id="now"/);
 });
 
 test("uses www.darianzhao.com as the only public identity", async () => {

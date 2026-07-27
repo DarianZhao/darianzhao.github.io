@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0a0a" />
     <title>Darian Zhao · 赵达然</title>
     <meta
       name="description"
@@ -13,111 +14,229 @@
     <meta property="og:locale" content="zh_CN" />
     <meta property="og:site_name" content="Darian Zhao" />
     <meta property="og:title" content="Darian Zhao · 赵达然" />
-    <meta property="og:description" content="一个持续生长的个人坐标系。" />
+    <meta
+      property="og:description"
+      content="一个持续生长的个人坐标系。"
+    />
     <meta property="og:url" content="https://www.darianzhao.com/" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Darian Zhao · 赵达然" />
-    <meta name="twitter:description" content="一个持续生长的个人坐标系。" />
+    <meta
+      name="twitter:description"
+      content="一个持续生长的个人坐标系。"
+    />
     <link rel="stylesheet" href="/styles.css" />
+    <script src="/script.js" defer></script>
   </head>
   <body>
-    <main>
-      <div class="ambient ambientOne" aria-hidden="true"></div>
-      <div class="ambient ambientTwo" aria-hidden="true"></div>
+    <a class="skipLink" href="#content">跳至主要内容</a>
+    <div class="scrollProgress" aria-hidden="true"></div>
+    <div class="cursorAura" aria-hidden="true"></div>
 
-      <header class="siteHeader">
-        <a class="wordmark" href="#top" aria-label="返回首页顶部">DZ</a>
-        <div class="headerMeta">
-          <span>Personal atlas</span>
-          <span class="status">
-            <i aria-hidden="true"></i>
-            Building in public
-          </span>
+    <header class="siteHeader" id="top">
+      <a class="wordmark" href="#top" aria-label="返回首页顶部">
+        <span>DZ</span>
+      </a>
+      <nav class="primaryNav" aria-label="主要导航">
+        <a href="#profile">档案</a>
+        <a href="#atlas">坐标</a>
+        <a href="#now">此刻</a>
+      </nav>
+      <div class="headerStatus">
+        <span class="statusDot" aria-hidden="true"></span>
+        <span>London</span>
+        <time id="localTime" datetime="">--:--</time>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="heroGrid" aria-hidden="true"></div>
+        <div class="heroMeta reveal">
+          <span>Personal index</span>
+          <span>Edition 01 / 2026</span>
         </div>
-      </header>
 
-      <section class="hero" id="top" aria-labelledby="page-title">
-        <div class="eyebrow">Darian Zhao · 赵达然</div>
-        <h1 id="page-title">
-          <span>一个持续生长的</span>
-          <em>个人坐标系。</em>
-        </h1>
-        <div class="heroFooter">
-          <p>
-            我正在把经历、作品、判断与好奇心，整理成一张可以被理解、
-            被探索，也会随时间更新的个人地图。
+        <div class="heroTitleWrap">
+          <p class="heroKicker reveal">Darian Zhao · 赵达然</p>
+          <h1 id="page-title" aria-label="Darian Zhao">
+            <span class="titleLine titleLineOne reveal">Darian</span>
+            <span class="titleLine titleLineTwo reveal">
+              <i aria-hidden="true">✦</i>
+              Zhao
+            </span>
+          </h1>
+        </div>
+
+        <div class="heroBottom reveal">
+          <p class="heroStatement">
+            一个持续生长的<span>个人坐标系。</span>
+            <small>
+              A living portrait of the work, ideas and questions shaping who I
+              am becoming.
+            </small>
           </p>
-          <a class="roundLink" href="#atlas" aria-label="查看主页信息地图">
-            <span>向下探索</span>
-            <b aria-hidden="true">↓</b>
+          <a class="exploreLink" href="#profile">
+            <span>进入档案</span>
+            <b aria-hidden="true">↘</b>
           </a>
+        </div>
+
+        <div class="editionSeal" aria-hidden="true">
+          <span>PERSONAL · ATLAS · DARIAN · ZHAO · </span>
+          <b>DZ</b>
+        </div>
+      </section>
+
+      <section class="manifesto" id="profile" aria-labelledby="manifesto-title">
+        <div class="sectionRail reveal">
+          <span>01</span>
+          <p>Profile / 档案</p>
+        </div>
+        <div class="manifestoContent">
+          <p class="overline reveal">A person is more than a résumé.</p>
+          <h2 id="manifesto-title" class="reveal">
+            我相信，认识一个人<br />
+            不应只看见<span>一段简介。</span>
+          </h2>
+          <div class="manifestoNotes">
+            <p class="reveal">
+              这里不是静止的履历，而是一份持续编辑的个人档案：经历如何塑造判断，
+              好奇心如何变成行动，作品又如何留下时间的痕迹。
+            </p>
+            <p class="reveal">
+              This site is designed to evolve. Each chapter will become richer
+              as the stories, work and convictions behind it are documented.
+            </p>
+          </div>
         </div>
       </section>
 
       <section class="atlas" id="atlas" aria-labelledby="atlas-title">
-        <div class="sectionIntro">
-          <p class="sectionLabel">01 / The atlas</p>
-          <h2 id="atlas-title">认识一个人，不该只有一段简介。</h2>
-          <p>
-            这四个维度会构成主页的长期结构。下一步，我们将用真实内容逐一填满。
-          </p>
+        <div class="atlasHead">
+          <div class="sectionRail reveal">
+            <span>02</span>
+            <p>Coordinates / 坐标</p>
+          </div>
+          <div>
+            <p class="overline reveal">Four ways to read a life.</p>
+            <h2 id="atlas-title" class="reveal">
+              四个维度，<br />
+              拼成一个<span>立体的人。</span>
+            </h2>
+          </div>
         </div>
 
-        <div class="atlasGrid">
-          <article class="atlasCard">
-            <span class="cardIndex">A</span>
-            <div>
+        <div class="chapterList">
+          <article class="chapter reveal">
+            <div class="chapterNumber">A / 01</div>
+            <div class="chapterTitle">
+              <p>Identity</p>
               <h3>我是谁</h3>
-              <p>成长轨迹、重要转折、价值观，以及塑造我的人与事。</p>
             </div>
-            <span class="cardState">待展开</span>
+            <p class="chapterCopy">
+              成长轨迹、关键转折、价值观，以及那些真正塑造我的人与事。
+            </p>
+            <span class="chapterState">正在整理</span>
+            <span class="chapterArrow" aria-hidden="true">↗</span>
           </article>
-          <article class="atlasCard">
-            <span class="cardIndex">B</span>
-            <div>
+
+          <article class="chapter reveal">
+            <div class="chapterNumber">B / 02</div>
+            <div class="chapterTitle">
+              <p>Practice</p>
               <h3>我在创造什么</h3>
-              <p>职业、项目、作品，以及我解决问题时所相信的方法。</p>
             </div>
-            <span class="cardState">待展开</span>
+            <p class="chapterCopy">
+              职业、项目与作品，也包括我面对复杂问题时所相信的方法。
+            </p>
+            <span class="chapterState">正在整理</span>
+            <span class="chapterArrow" aria-hidden="true">↗</span>
           </article>
-          <article class="atlasCard">
-            <span class="cardIndex">C</span>
-            <div>
+
+          <article class="chapter reveal">
+            <div class="chapterNumber">C / 03</div>
+            <div class="chapterTitle">
+              <p>Perspective</p>
               <h3>我如何思考</h3>
-              <p>写作、观点、阅读与观察，记录判断形成的过程。</p>
             </div>
-            <span class="cardState">待展开</span>
+            <p class="chapterCopy">
+              写作、观点、阅读与观察——记录判断形成，而不只展示结论。
+            </p>
+            <span class="chapterState">正在整理</span>
+            <span class="chapterArrow" aria-hidden="true">↗</span>
           </article>
-          <article class="atlasCard">
-            <span class="cardIndex">D</span>
-            <div>
+
+          <article class="chapter reveal">
+            <div class="chapterNumber">D / 04</div>
+            <div class="chapterTitle">
+              <p>Now</p>
               <h3>此刻的我</h3>
-              <p>正在投入的事情、最近的关注，以及希望遇见的合作。</p>
             </div>
-            <span class="cardState">待展开</span>
+            <p class="chapterCopy">
+              眼下正在投入的事情、最近的关注，以及希望遇见的同行者。
+            </p>
+            <span class="chapterState">持续更新</span>
+            <span class="chapterArrow" aria-hidden="true">↗</span>
           </article>
         </div>
       </section>
 
-      <section class="principle" aria-labelledby="principle-title">
-        <p class="sectionLabel">02 / A living site</p>
-        <div class="principleBody">
-          <h2 id="principle-title">不是一次写完的履历，而是一个长期维护的本人。</h2>
-          <p>
-            内容会不断补充，视觉会逐步成形。每一次更新都保留清晰版本，
-            让这个站点既能稳定抵达，也能一直生长。
-          </p>
+      <section class="now" id="now" aria-labelledby="now-title">
+        <div class="nowBackdrop" aria-hidden="true">NOW</div>
+        <div class="sectionRail sectionRailLight reveal">
+          <span>03</span>
+          <p>Present tense / 此刻</p>
+        </div>
+        <div class="nowContent">
+          <p class="overline reveal">Currently, deliberately, in motion.</p>
+          <h2 id="now-title" class="reveal">
+            保持好奇。<br />
+            保持行动。<br />
+            <span>保持成为。</span>
+          </h2>
+          <div class="nowGrid">
+            <div class="nowItem reveal">
+              <span>Location</span>
+              <strong>London / Worldwide</strong>
+            </div>
+            <div class="nowItem reveal">
+              <span>Current chapter</span>
+              <strong>Building the personal atlas</strong>
+            </div>
+            <div class="nowItem reveal">
+              <span>Last updated</span>
+              <strong>July 2026</strong>
+            </div>
+          </div>
         </div>
       </section>
 
-      <footer>
-        <div>
-          <strong>Darian Zhao</strong>
-          <span>London · 2026</span>
+      <section class="closing" aria-labelledby="closing-title">
+        <p class="overline reveal">The archive has just begun.</p>
+        <h2 id="closing-title" class="reveal">
+          这不是完成页。<br />
+          这是<span>开始页。</span>
+        </h2>
+        <div class="closingBottom reveal">
+          <p>
+            每一次更新，都会让这里更接近一个真实、完整、仍在生长的人。
+          </p>
+          <a href="#top" class="topLink">
+            <span>回到顶部</span>
+            <b aria-hidden="true">↑</b>
+          </a>
         </div>
-        <p>Foundation edition · v0.1</p>
-        <a href="#top">回到顶部 ↑</a>
-      </footer>
+      </section>
     </main>
+
+    <footer>
+      <div class="footerIdentity">
+        <strong>Darian Zhao</strong>
+        <span>赵达然</span>
+      </div>
+      <p>Personal atlas · Edition 01</p>
+      <p>© <span id="copyrightYear">2026</span> Darian Zhao</p>
+    </footer>
   </body>
 </html>
