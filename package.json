@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "test": "node --test tests/static-site.test.mjs"
+    "test": "node --test static-site.test.mjs"
   },
   "type": "module"
 }

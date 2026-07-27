@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 
-const root = new URL("../", import.meta.url);
+const root = new URL("./", import.meta.url);
 
 test("publishes a complete semantic homepage", async () => {
   const html = await readFile(new URL("index.html", root), "utf8");
