@@ -3,281 +3,177 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f7f5ef" />
+    <meta name="theme-color" content="#eeeade" />
     <title>Darian Zhao · 赵达然</title>
-    <meta
-      name="description"
-      content="Darian Zhao 的个人数字花园：经历、作品、思考与正在发生的事。"
-    />
+    <meta name="description" content="Darian Zhao（赵达然）的个人主页：终身学习、易学研习、技术、商业与每日笔记。" />
     <link rel="canonical" href="https://www.darianzhao.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="zh_CN" />
-    <meta property="og:site_name" content="Darian Zhao" />
     <meta property="og:title" content="Darian Zhao · 赵达然" />
-    <meta
-      property="og:description"
-      content="一个持续生长的个人坐标系。"
-    />
+    <meta property="og:description" content="一个持续生长的个人坐标系。" />
     <meta property="og:url" content="https://www.darianzhao.com/" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Darian Zhao · 赵达然" />
-    <meta
-      name="twitter:description"
-      content="一个持续生长的个人坐标系。"
-    />
-    <link rel="stylesheet" href="/styles.css" />
-    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./notes-data.js" defer></script>
+    <script src="./script.js" defer></script>
   </head>
   <body>
-    <a class="skipLink" href="#content">跳至主要内容</a>
-
-    <header class="siteHeader" id="top">
-      <a class="gardenMark" href="#top" aria-label="返回首页顶部">
-        <span class="markLeaf markLeafLeft" aria-hidden="true"></span>
-        <strong>DZ</strong>
-        <span class="markLeaf markLeafRight" aria-hidden="true"></span>
+    <a class="skip-link" href="#main">跳至正文</a>
+    <header class="site-header" id="top">
+      <a class="identity" href="#top" aria-label="返回顶部">
+        <span class="seal" aria-hidden="true">然</span>
+        <span><strong>赵达然</strong><small>DARIAN ZHAO</small></span>
       </a>
-      <nav class="primaryNav" aria-label="主要导航">
-        <a href="#garden">花园</a>
+      <nav aria-label="主要导航">
+        <a href="#profile">自序</a>
+        <a href="#studies">研习</a>
+        <a href="#notes">日课</a>
         <a href="#now">此刻</a>
-        <a href="#about">关于</a>
       </nav>
     </header>
 
-    <main id="content">
+    <main id="main">
       <section class="hero" aria-labelledby="page-title">
-        <div class="heroSprig" aria-hidden="true">
-          <span></span><span></span><span></span><span></span>
-        </div>
-        <p class="heroEyebrow">Darian Zhao · 赵达然</p>
-        <h1 id="page-title">
-          Darian 正在建造一座关于
-          <em>事业、技术、思考与成长</em>
-          的个人数字花园。
-        </h1>
-        <div class="heroIntro">
-          <p>建造者、观察者，也是一个持续学习的人。</p>
-          <p>
-            这里是一个持续生长的个人坐标系：收集经历，记录判断，
-            也保存那些暂时还没有答案的问题。
+        <div class="hero-copy">
+          <p class="eyebrow">终身学习者 · 易学研习者 · 当代实践者</p>
+          <h1 id="page-title">
+            在变化中求理，<br />
+            在日常中<span>修身。</span>
+          </h1>
+          <p class="lead">
+            我是 Darian Zhao，赵达然。这里记录我在传统易学、技术、商业与人的问题之间，
+            持续阅读、实践与反思的过程。
           </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#notes">读今日笔记</a>
+            <a class="button quiet" href="#profile">了解我</a>
+          </div>
         </div>
+        <div class="hero-symbol" aria-label="乾卦：自强不息">
+          <p>乾</p>
+          <div class="hexagram" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <span>天行健，君子以自强不息</span>
+        </div>
+        <p class="vertical-note" aria-hidden="true">格物 · 致知 · 诚意 · 正心</p>
       </section>
 
-      <section class="gardenIntro" id="garden" aria-labelledby="garden-title">
-        <div class="sectionHeading">
-          <div>
-            <span class="sectionIcon" aria-hidden="true">✦</span>
-            <h2 id="garden-title">The Garden</h2>
+      <section class="profile section" id="profile" aria-labelledby="profile-title">
+        <div class="section-index"><span>壹</span><small>PROFILE</small></div>
+        <div class="portrait-card">
+          <div class="portrait-placeholder" role="img" aria-label="Darian Zhao 的照片位置">
+            <span>然</span>
+            <p>个人照片<br />即将加入</p>
           </div>
+          <small>PORTRAIT · LONDON</small>
+        </div>
+        <div class="profile-copy">
+          <p class="kicker">自序</p>
+          <h2 id="profile-title">不是把传统陈列于身后，<br />而是让它参与今天的判断。</h2>
           <p>
-            数字花园不是完美文章的陈列柜，而是一片允许想法慢慢生长的土地。
-            这里会逐步长出长文、笔记、工作方法和阅读脉络。
+            我相信学习不是阶段性的任务，而是一种生活方式。易学给我观察变化的尺度，
+            技术给我重新组织现实的工具，商业则不断检验判断能否真正落地。
           </p>
-        </div>
-      </section>
-
-      <section class="contentSection essays" aria-labelledby="essays-title">
-        <div class="contentSectionHead">
-          <div>
-            <span class="sectionNumber">01</span>
-            <h2 id="essays-title">Essays · 长文</h2>
-          </div>
-          <p>经过思考、带着立场的完整叙事。</p>
-        </div>
-
-        <div class="essayGrid">
-          <article class="essayCard">
-            <div class="essayArt artDecisions" aria-hidden="true">
-              <span class="orbit orbitOne"></span>
-              <span class="orbit orbitTwo"></span>
-              <b>?</b>
-            </div>
-            <div class="essayBody">
-              <p class="contentMeta">Essay seed · 正在生长</p>
-              <h3>在不确定中，如何形成自己的判断</h3>
-              <p>
-                关于信息、经验与直觉，如何共同组成一个可以被检验的决定。
-              </p>
-            </div>
-          </article>
-
-          <article class="essayCard">
-            <div class="essayArt artSystems" aria-hidden="true">
-              <span></span><span></span><span></span><span></span>
-            </div>
-            <div class="essayBody">
-              <p class="contentMeta">Essay seed · 正在生长</p>
-              <h3>把复杂的事情，变成可以行动的系统</h3>
-              <p>
-                好系统不只是提高效率，也会让人看清真正重要的问题。
-              </p>
-            </div>
-          </article>
-
-          <article class="essayCard">
-            <div class="essayArt artHumanAI" aria-hidden="true">
-              <span class="humanDot"></span>
-              <span class="aiDot"></span>
-              <i></i>
-            </div>
-            <div class="essayBody">
-              <p class="contentMeta">Essay seed · 正在生长</p>
-              <h3>人与 AI，应该如何一起工作</h3>
-              <p>
-                工具不断变聪明之后，人的品味、责任和判断反而变得更加重要。
-              </p>
-            </div>
-          </article>
-
-          <article class="essayCard">
-            <div class="essayArt artLongTerm" aria-hidden="true">
-              <span class="stem"></span>
-              <span class="leaf leafOne"></span>
-              <span class="leaf leafTwo"></span>
-              <span class="leaf leafThree"></span>
-            </div>
-            <div class="essayBody">
-              <p class="contentMeta">Essay seed · 正在生长</p>
-              <h3>长期主义，不只是把时间拉长</h3>
-              <p>
-                它更像一种选择标准：知道什么值得积累，也知道什么应该放下。
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="contentSection notes" aria-labelledby="notes-title">
-        <div class="contentSectionHead">
-          <div>
-            <span class="sectionNumber">02</span>
-            <h2 id="notes-title">Notes · 笔记</h2>
-          </div>
-          <p>尚未长成文章，但值得被留下的片段。</p>
-        </div>
-
-        <div class="noteList">
-          <article class="note">
-            <span class="noteSeed" aria-hidden="true"></span>
-            <h3>从经营数据到商业判断</h3>
-            <p>工作笔记</p>
-          </article>
-          <article class="note">
-            <span class="noteSeed" aria-hidden="true"></span>
-            <h3>把个人知识变成一套可以复用的系统</h3>
-            <p>方法</p>
-          </article>
-          <article class="note">
-            <span class="noteSeed" aria-hidden="true"></span>
-            <h3>跨文化沟通里，那些没有说出口的上下文</h3>
-            <p>观察</p>
-          </article>
-          <article class="note">
-            <span class="noteSeed" aria-hidden="true"></span>
-            <h3>AI 在真实工作中的位置</h3>
-            <p>技术</p>
-          </article>
-          <article class="note">
-            <span class="noteSeed" aria-hidden="true"></span>
-            <h3>设计与工程之间，常常缺少什么</h3>
-            <p>产品</p>
-          </article>
-          <article class="note">
-            <span class="noteSeed" aria-hidden="true"></span>
-            <h3>为什么记录过程比展示结论更重要</h3>
-            <p>思考</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="contentSection patterns" aria-labelledby="patterns-title">
-        <div class="contentSectionHead">
-          <div>
-            <span class="sectionNumber">03</span>
-            <h2 id="patterns-title">Patterns · 模式</h2>
-          </div>
-          <p>从工作与生活中反复出现的方法和结构。</p>
-        </div>
-
-        <div class="patternGrid">
-          <article class="patternCard">
-            <span class="patternGlyph" aria-hidden="true">⌁</span>
-            <h3>Conversation-first</h3>
-            <p>先让问题在对话里变清楚，再急着寻找工具与答案。</p>
-            <span class="patternTag">沟通模式</span>
-          </article>
-          <article class="patternCard">
-            <span class="patternGlyph" aria-hidden="true">◎</span>
-            <h3>Human in the loop</h3>
-            <p>自动化负责速度，人始终保留判断、校正和最终责任。</p>
-            <span class="patternTag">协作模式</span>
-          </article>
-          <article class="patternCard">
-            <span class="patternGlyph" aria-hidden="true">↝</span>
-            <h3>Decision trails</h3>
-            <p>保留决定如何形成的路径，让经验真正成为可以复用的资产。</p>
-            <span class="patternTag">决策模式</span>
-          </article>
-          <article class="patternCard">
-            <span class="patternGlyph" aria-hidden="true">⁙</span>
-            <h3>Small systems, long life</h3>
-            <p>从足够小但可靠的系统开始，让它在真实使用中慢慢长大。</p>
-            <span class="patternTag">建造模式</span>
-          </article>
-        </div>
-      </section>
-
-      <section class="now" id="now" aria-labelledby="now-title">
-        <div class="nowDecoration" aria-hidden="true">
-          <span></span><span></span><span></span>
-        </div>
-        <div class="nowHeading">
-          <p>Now · 此刻</p>
-          <h2 id="now-title">这座花园正在从结构，长成一个真实的人。</h2>
-        </div>
-        <div class="nowDetails">
-          <div>
-            <span>正在建造</span>
-            <strong>这座个人数字花园</strong>
-          </div>
-          <div>
-            <span>正在整理</span>
-            <strong>经历、项目、观点与长期关注</strong>
-          </div>
-          <div>
-            <span>坐标</span>
-            <strong>London · Connected worldwide</strong>
-          </div>
-        </div>
-      </section>
-
-      <section class="about" id="about" aria-labelledby="about-title">
-        <div class="aboutPortrait" aria-hidden="true">
-          <span class="portraitRing ringOne"></span>
-          <span class="portraitRing ringTwo"></span>
-          <strong>DZ</strong>
-          <i>赵达然</i>
-        </div>
-        <div class="aboutCopy">
-          <p class="contentMeta">About this garden</p>
-          <h2 id="about-title">不是一次写完的履历，而是一个长期维护的本人。</h2>
           <p>
-            主页会随着真实内容不断生长。下一步，我们会把 Darian 的人生经历、
-            事业项目、重要作品、阅读与观点逐一整理进来，让每一块内容都可以继续展开。
+            这不是一份静止的简历，而是一处个人学术档案与修习日志。
+            我会在这里留下读过的书、做过的事、形成的观点，以及仍未想明白的问题。
           </p>
+          <dl class="coordinates">
+            <div><dt>姓名</dt><dd>Darian Zhao · 赵达然</dd></div>
+            <div><dt>坐标</dt><dd>London · Connected worldwide</dd></div>
+            <div><dt>长期主题</dt><dd>传统智慧、人工智能、商业实践、人的成长</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="studies section" id="studies" aria-labelledby="studies-title">
+        <div class="section-heading">
+          <div class="section-index"><span>贰</span><small>STUDIES</small></div>
+          <div>
+            <p class="kicker">研习谱系</p>
+            <h2 id="studies-title">以古观今，以知促行。</h2>
+          </div>
+          <p>四条彼此交汇的路径，构成我理解世界与解决问题的基本坐标。</p>
+        </div>
+        <div class="study-grid">
+          <article>
+            <span class="study-number">01</span><b>易</b>
+            <h3>易学与传统</h3>
+            <p>从象、数、理中理解变化、时位与关系，不以玄奇代替求证。</p>
+            <small>I CHING · CLASSICS</small>
+          </article>
+          <article>
+            <span class="study-number">02</span><b>技</b>
+            <h3>技术与人工智能</h3>
+            <p>关注工具如何扩展人的能力，也追问判断、责任与边界。</p>
+            <small>TECHNOLOGY · AI</small>
+          </article>
+          <article>
+            <span class="study-number">03</span><b>商</b>
+            <h3>商业与组织</h3>
+            <p>在真实市场中理解价值、协作与长期主义，让知识接受实践检验。</p>
+            <small>BUSINESS · SYSTEMS</small>
+          </article>
+          <article>
+            <span class="study-number">04</span><b>人</b>
+            <h3>哲学与认知</h3>
+            <p>研究人如何认识自己、形成判断，并在复杂世界中安顿身心。</p>
+            <small>PHILOSOPHY · MIND</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="notes section" id="notes" aria-labelledby="notes-title">
+        <div class="notes-intro">
+          <div class="section-index"><span>叁</span><small>DAILY NOTES</small></div>
+          <p class="kicker">日课</p>
+          <h2 id="notes-title">每日一记，<br />让思考留下纹理。</h2>
+          <p>
+            这里收录阅读札记、工作复盘与片刻所得。内容保持简短，也允许观点在时间里被修正。
+          </p>
+          <div class="note-rule"><span>日日新</span></div>
+        </div>
+        <div class="note-list" id="note-list" aria-live="polite">
+          <article class="note-card">
+            <div><time datetime="2026-07-28">二〇二六年七月二十八日</time><span>启页</span></div>
+            <h3>为终身学习留下一处每日更新的位置</h3>
+            <p>从今日起，这里将收录阅读、实践与反思。后续内容由 Darian 持续更新。</p>
+            <small>NOTE 001</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="questions section" id="questions" aria-labelledby="questions-title">
+        <div class="section-heading compact">
+          <div class="section-index"><span>肆</span><small>QUESTIONS</small></div>
+          <div><p class="kicker">书案</p><h2 id="questions-title">正在追问</h2></div>
+        </div>
+        <ol class="question-list">
+          <li><span>01</span><p>在信息过剩与高度不确定中，如何形成可被检验的判断？</p><small>判断</small></li>
+          <li><span>02</span><p>人工智能越强大，人的品味、责任和主体性应当放在何处？</p><small>技术</small></li>
+          <li><span>03</span><p>易学的系统思维，能否为现代组织提供新的观察尺度？</p><small>易学</small></li>
+          <li><span>04</span><p>长期主义如何从一句口号，变成日常选择的真实标准？</p><small>修习</small></li>
+        </ol>
+      </section>
+
+      <section class="now section" id="now" aria-labelledby="now-title">
+        <div class="now-mark" aria-hidden="true">此<br />刻</div>
+        <div>
+          <p class="kicker">NOW · JULY 2026</p>
+          <h2 id="now-title">把这座网站，建成一间长期开放的书房。</h2>
+        </div>
+        <div class="now-list">
+          <p><span>正在建造</span>个人知识与写作系统</p>
+          <p><span>正在整理</span>易学、AI 与商业实践笔记</p>
+          <p><span>正在寻找</span>值得长期研究的真实问题</p>
         </div>
       </section>
     </main>
 
     <footer>
-      <div>
-        <strong>Darian Zhao</strong>
-        <span>Personal digital garden</span>
-      </div>
-      <p>Growing slowly, deliberately.</p>
-      <a href="#top">回到顶部 ↑</a>
-      <small>© <span id="copyrightYear">2026</span> Darian Zhao</small>
+      <div><span class="seal small" aria-hidden="true">然</span><p><strong>Darian Zhao · 赵达然</strong><br />学习无终点，修行在日常。</p></div>
+      <p>© <span id="copyrightYear">2026</span> · www.darianzhao.com</p>
+      <a href="#top">回到页首 ↑</a>
     </footer>
   </body>
 </html>
