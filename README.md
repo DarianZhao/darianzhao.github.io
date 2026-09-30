@@ -1,24 +1,32 @@
-# www.darianzhao.com
+# TERRIFIC / 泰瑞丰静态官网
 
-Darian Zhao 的长期个人主页，使用 GitHub Pages 托管。
+以应用为起点的英文 B2B 公司网站。目标域名仍为 `www.darianzhao.com`。
 
-## 结构
+## 页面与交互
 
-- `index.html`：主页内容与语义结构
-- `styles.css`：完整视觉系统与响应式布局
-- `CNAME`：唯一正式域名 `www.darianzhao.com`
-- `robots.txt`、`sitemap.xml`：搜索引擎入口
-- `.nojekyll`：让 GitHub Pages 直接发布原始静态文件
-- `static-site.test.mjs`：发布前自动验证
+- `index.html`：公司首页、应用、选材器、材料对比、合作流程、社媒视频、询盘。
+- `styles.css`：蓝白工业视觉及手机响应式布局。
+- `materials-data.js`：五类材料、五类应用、选材问题与视频文稿。
+- `script.js`：选材联动、详情弹窗、视频、邮件草稿、复制及下载。
+- `assets/`：本地品牌、产品、公司、肖像、视频和项目清单。
+- `continuous-improvement/`：原有系统保留原地址，不在公司网站导航中展示。
 
-站点没有数据库、登录、框架运行时或第三方脚本。GitHub Pages 直接分发 HTML 与 CSS，保持最少依赖和最大的可迁移性。
+询盘不会自动发送：表单生成邮件预览，买家自行在邮件客户端发送给官网公开邮箱 `sd.terrific@gmail.com`。没有后台收件接口、CRM、数据库或跟踪脚本，不保存表单到 localStorage。
 
-## 共同编辑
+`?application=medical#finder` 和 `?application=packaging#finder` 可用于社媒应用入口。其他支持值：automotive、cable、consumer。
 
-直接在 Codex 对话中描述希望增加、修改或删除的内容即可。每次变更会先经过本地验证，再提交到 GitHub；GitHub Pages 随后自动更新 `https://www.darianzhao.com`。
+## 本地验证
 
-## 验证
+运行 `npm test`。运行 `python3 -m http.server 8765 --bind 127.0.0.1` 后打开 `http://127.0.0.1:8765/`。也可以直接打开 `index.html`；复制功能受浏览器权限影响时，可选中草稿或下载文本。
 
-```bash
-npm test
-```
+## 发布状态和边界
+
+本次为本地可交互版本，尚未发布新公司网站。原 GitHub Pages 连接仍保留。GitHub Pages 使用限制不允许将其作为经营在线业务的免费托管（https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits）。正式商用发布前应将同一域名接到允许此用途的托管服务。
+
+域名迁移时只上传明确的公开网页资源，不上传仓库、测试、设计记录或内部业务材料。原持续改进系统单独评估并保留，不能误作公司营销内容。
+
+未公布未经核对的产能数字、MOQ、交期、性能数值或证书；材料描述属于家族层面的讨论起点，不替代牌号 TDS 和终端产品验证。后续补充经确认的牌号表、证书及检测报告、工厂原图和正式收件方案。
+
+## 素材来源
+
+公司联系信息、公开产品家族与工厂/应用图片来自 tpeaelastomer.com（2026-09-29 核对）。Logo、工服肖像、两条视频及瓶塞图片来自用户本轮提供的素材和对应交付文件夹。图片和视频均本地加载，视频只在点击后加载。
