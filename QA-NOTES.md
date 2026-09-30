@@ -1,5 +1,12 @@
 # TERRIFIC preview verification — 2026-09-29
 
+## Revision 3
+
+- All four newly supplied shared-volume photos now appear in the company section: campus aerial, R&D workspace, R&D team and office exterior.
+- Three supporting photos form a desktop gallery and stack in one column on mobile; original compositions are preserved.
+- Browser confirms all four images loaded, no desktop or mobile horizontal overflow, and successful workspace/team photo dialogs.
+- Six existing tests, script syntax validation and whitespace checks pass. No production deployment performed.
+
 ## Revision 2
 
 - Replaced the old-factory collage with the user's two confirmed new-factory photos, preserving full compositions and encoding as WebP.

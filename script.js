@@ -71,8 +71,10 @@
   }
   document.querySelectorAll('[data-application]').forEach(button=>button.addEventListener('click',()=>showApplication(button.dataset.application,button)));
   const factoryPhotos = {
-    campus:{src:'./assets/factory-campus.webp',title:'The TERRIFIC campus',alt:'Aerial view of the new TERRIFIC factory campus in Shandong'},
-    office:{src:'./assets/factory-office.webp',title:'A closer look at TERRIFIC',alt:'The new TERRIFIC office building and company signage'}
+    campus:{src:'./assets/factory-campus-v3.webp',title:'The TERRIFIC campus',alt:'Aerial view of the TERRIFIC factory campus in Shandong'},
+    workspace:{src:'./assets/research-workspace.webp',title:'Inside our development workspace',alt:'TERRIFIC research and development workspace'},
+    team:{src:'./assets/research-team.webp',title:'The people behind the material',alt:'The TERRIFIC team at the research and development center'},
+    office:{src:'./assets/factory-office-v3.webp',title:'A closer look at TERRIFIC',alt:'The TERRIFIC office building and company signage'}
   };
   document.querySelectorAll('[data-factory]').forEach(button=>button.addEventListener('click',()=>{
     const photo=factoryPhotos[button.dataset.factory];

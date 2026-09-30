@@ -1,5 +1,13 @@
 # TERRIFIC website media sources
 
+Revision 3 replaces the campus feature and adds a facility gallery from four files supplied by the user on the shared volume:
+- factory-campus-v3.webp: /Volumes/市场共享文件夹/chat4.png
+- research-workspace.webp: /Volumes/市场共享文件夹/研发产地.png
+- research-team.webp: /Volumes/市场共享文件夹/研发.png
+- factory-office-v3.webp: /Volumes/市场共享文件夹/3、图片类/修图-公司.png
+
+These four assets use WebP encoding for delivery; original composition and dimensions are preserved. Captions describe the user's supplied scenes without inventing certifications, production figures or employee roles. Earlier factory assets remain unused historical files.
+
 Prepared 2026-09-29. This file is a maintenance record, not part of navigation.
 
 - trf-logo-transparent.png: user-supplied transparent TRF logo, 行政管理/透明版.png.
