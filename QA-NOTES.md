@@ -1,5 +1,13 @@
 # TERRIFIC preview verification — 2026-09-29
 
+## Revision 6 — company overview and six application sectors
+
+- Added company-supplied annual capacity, pelletizing-line count, R&D area and production area in a four-metric company overview. Explicitly distinguishes annual capacity from actual yearly output; no guaranteed lead time inferred.
+- Added pharmaceutical packaging and everyday-product application entries; existing automotive, medical, food packaging and specialty cable descriptions aligned to the supplied overview. Pharmaceutical detail dialog, finder option and inquiry form now connect end to end.
+- Added industry–academia–research cooperation and joint postgraduate training base copy below the company gallery. Four institutional names retained from user material; no logos or certification/endorsement claims. User confirmed the screenshot wording for the CAS chemistry research center should be retained without identifying a particular institute.
+- Browser verified pharmaceutical detail → project brief populates the correct application and requirements. Four partner names rendered. Desktop has no horizontal overflow; mobile width 375 matches scroll width, with two-column metric cards and readable numbers.
+- Eight tests pass, JavaScript syntax and whitespace checks pass. Bright static photos, early video placement, email and WeChat remain unchanged. Local preview only; no production deployment.
+
 ## Revision 3
 
 - All four newly supplied shared-volume photos now appear in the company section: campus aerial, R&D workspace, R&D team and office exterior.

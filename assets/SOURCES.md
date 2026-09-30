@@ -31,6 +31,12 @@ The public website images are company-provided illustrative assets; their origin
 
 Facebook link supplied by the user: https://www.facebook.com/share/1CfoK93GjA/?mibextid=wwXIfr . The share URL is used as supplied, not guessed into a canonical profile URL. Instagram and LinkedIn URLs were not located in the scoped media/project records; no placeholder or inferred profile links were published.
 
+## Revision 6 — user-supplied overview
+
+Source: user-uploaded `codex-clipboard-efc94509-8bea-4f51-bbdd-63a39ab8079d.png`, 2026-09-29. Incorporated 50,000+ metric tonnes annual capacity (not actual output), 10+ pelletizing lines, 3,000 m² R&D center, 20,000 m² production center, six application sectors, industry–academia–research cooperation and joint postgraduate training base. Removed the import-substitution positioning per user request. These business facts are supplied by the company, not independently audited.
+
+Institution English names checked against https://en.qust.edu.cn/ABOUT_US.htm, https://english.upc.edu.cn/info/1050/1355.htm and https://is.buaa.edu.cn/en/. Those pages establish names only, not the collaboration relationship. No campus inferred for China University of Petroleum. The user explicitly confirmed keeping the screenshot wording “中科院化学研究中心” despite not knowing the formal unit; English is a literal descriptive translation, not identification with a specific institute. No university logos, certification or product-endorsement claims added.
+
 ## Revision 4 — natural-detail replacements
 
 All paths below are under `/Volumes/市场共享文件夹/3、图片类/公司场景照/`.
