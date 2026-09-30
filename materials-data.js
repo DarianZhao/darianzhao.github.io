@@ -1,7 +1,7 @@
 /* Public portfolio descriptions follow the company's website. No numerical
    specification or regulatory approval is implied by a family-level guide. */
 window.TRF = {
-  email: 'sd.terrific@gmail.com',
+  email: 'hi@darianzhao.com',
   materials: [
     {id:'TPE',name:'Thermoplastic elastomer',summary:'Versatile softness, flexibility and processing',traits:'Hardness · recovery · molding',description:'A starting point for flexible parts, seals and soft-touch applications. Discuss the required balance between softness, recovery and manufacturing behavior.',questions:['Target hardness and the test method','Part geometry, fit and compression conditions','Injection molding or extrusion process','Contact medium, temperature and applicable tests']},
     {id:'TPV',name:'Thermoplastic vulcanizate',summary:'Heat, weather exposure and durable sealing',traits:'Service temperature · exposure · sealing',description:'A family to discuss for durable elastomer components exposed to heat or outdoor conditions. The service environment and sealing requirements determine which grade should be evaluated.',questions:['Continuous and peak service temperatures','Outdoor exposure and contact fluids','Compression and recovery requirements','Geometry, processing method and acceptance tests']},

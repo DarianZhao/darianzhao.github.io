@@ -30,3 +30,14 @@ Prepared 2026-09-29. This file is a maintenance record, not part of navigation.
 The public website images are company-provided illustrative assets; their original photography provenance has not been independently verified. Certificates shown in source videos have not been independently audited. No additional approval claims were added to the web copy.
 
 Facebook link supplied by the user: https://www.facebook.com/share/1CfoK93GjA/?mibextid=wwXIfr . The share URL is used as supplied, not guessed into a canonical profile URL. Instagram and LinkedIn URLs were not located in the scoped media/project records; no placeholder or inferred profile links were published.
+
+## Revision 4 — natural-detail replacements
+
+All paths below are under `/Volumes/市场共享文件夹/3、图片类/公司场景照/`.
+
+- `factory-office-natural.webp`: `外景/D44D4AEC9FEF88EF33FB5114FBD05B14.png`.
+- `research-workspace-natural.webp`: `研发中心/dji_fly_20260128_100442_0102_1769567491327_photo_.JPG`.
+- `research-at-work.webp`: `研发中心/DJI_0617.JPG` (replaces the processed posed team image).
+- `factory-campus-natural.webp`: `外景/B429CAFA0BEAC6002426354A68C27E43.png`.
+
+Selected for coherent signs, structural detail and natural light. Reduced to 2048 pixels wide, WebP quality 92. No generative edits, text reconstruction, sky replacement, exposure or saturation changes. Source capture dates and complete editing histories are unverified; do not describe these as certified untouched originals or proof of current construction status. Prior assets remain available for rollback but are not referenced in the homepage or photo dialogs.

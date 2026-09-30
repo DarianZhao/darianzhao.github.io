@@ -71,10 +71,10 @@
   }
   document.querySelectorAll('[data-application]').forEach(button=>button.addEventListener('click',()=>showApplication(button.dataset.application,button)));
   const factoryPhotos = {
-    campus:{src:'./assets/factory-campus-v3.webp',title:'The TERRIFIC campus',alt:'Aerial view of the TERRIFIC factory campus in Shandong'},
-    workspace:{src:'./assets/research-workspace.webp',title:'Inside our development workspace',alt:'TERRIFIC research and development workspace'},
-    team:{src:'./assets/research-team.webp',title:'The people behind the material',alt:'The TERRIFIC team at the research and development center'},
-    office:{src:'./assets/factory-office-v3.webp',title:'A closer look at TERRIFIC',alt:'The TERRIFIC office building and company signage'}
+    campus:{src:'./assets/factory-campus-natural.webp',title:'The TERRIFIC campus',alt:'Aerial view of the TERRIFIC factory campus in Shandong'},
+    workspace:{src:'./assets/research-workspace-natural.webp',title:'Inside our development workspace',alt:'TERRIFIC research and development workspace'},
+    team:{src:'./assets/research-at-work.webp',title:'The people behind the material',alt:'TERRIFIC colleagues working with development equipment'},
+    office:{src:'./assets/factory-office-natural.webp',title:'A closer look at TERRIFIC',alt:'The TERRIFIC office building and company signage'}
   };
   document.querySelectorAll('[data-factory]').forEach(button=>button.addEventListener('click',()=>{
     const photo=factoryPhotos[button.dataset.factory];
@@ -118,12 +118,22 @@
     try { await navigator.clipboard.writeText(activeBrief);$('#copy-status').textContent='Brief copied. Paste it into your email to '+email+'.';}
     catch {$('#email-preview').focus();$('#email-preview').select();$('#copy-status').textContent='Select and copy the brief above, or download it as a text file.';}
   });
+  $('#copy-wechat').addEventListener('click',async()=>{
+    const field=$('#wechat-id');
+    try {
+      await navigator.clipboard.writeText(field.value);
+      $('#wechat-status').textContent='WeChat ID copied. Open WeChat and search this number to add Darian.';
+    } catch {
+      field.focus();field.select();
+      $('#wechat-status').textContent='Select and copy the number above, then search for it in WeChat.';
+    }
+  });
   $('#download-inquiry').addEventListener('click',()=>{
     const url=URL.createObjectURL(new Blob([activeBrief],{type:'text/plain;charset=utf-8'}));
     const link=document.createElement('a');link.href=url;link.download='TERRIFIC-project-inquiry.txt';document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
   });
   $('#privacy-button').addEventListener('click', event=>{
-    $('#detail-content').innerHTML='<div class="dialog-body"><p class="eyebrow">PRIVACY</p><h2 id="detail-title">Your project stays in your hands.</h2><p>This website does not use advertising trackers or save your project form in browser storage. Form entries remain in this page until you leave or reload it.</p><h3>When you choose to send</h3><p>The email action passes your prepared text to your own email application. It is only sent after you send it there. TERRIFIC receives the details and attachments you choose to email and uses them to respond to your project inquiry.</p><h3>Website delivery</h3><p>The hosting provider may process connection information, including IP addresses, to deliver and protect the website. Product images and videos are served from this site. For questions about an inquiry or your information, contact sd.terrific@gmail.com.</p></div>';
+    $('#detail-content').innerHTML='<div class="dialog-body"><p class="eyebrow">PRIVACY</p><h2 id="detail-title">Your project stays in your hands.</h2><p>This website does not use advertising trackers or save your project form in browser storage. Form entries remain in this page until you leave or reload it.</p><h3>When you choose to send</h3><p>The email action passes your prepared text to your own email application. It is only sent after you send it there. TERRIFIC receives the details and attachments you choose to email and uses them to respond to your project inquiry.</p><h3>Website delivery</h3><p>The hosting provider may process connection information, including IP addresses, to deliver and protect the website. Product images and videos are served from this site. For questions about an inquiry or your information, contact hi@darianzhao.com.</p></div>';
     openDialog(detail,event.currentTarget);
   });
   const menu=$('.menu-toggle'),nav=$('#navigation');

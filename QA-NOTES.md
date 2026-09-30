@@ -7,6 +7,15 @@
 - Browser confirms all four images loaded, no desktop or mobile horizontal overflow, and successful workspace/team photo dialogs.
 - Six existing tests, script syntax validation and whitespace checks pass. No production deployment performed.
 
+## Revision 4
+
+- Replaced all four processed facility photographs with natural-detail alternatives from the shared company image library. No reconstructed text, generated scenery or structural retouching. WebP delivery at 2048 pixels wide; prior files retained for rollback.
+- Company evidence now follows applications, before the material finder. Image sequence: office identity, R&D workspace, colleagues at work, facility aerial. Gallery crops are presentation-only; dialogs show the full frame.
+- Updated primary email to hi@darianzhao.com, added darian@darianzhao.com, and WeChat 15610170228 with copy action and manual-copy fallback. Removed old phone and email from customer-facing homepage resources, inquiry recipient and structured data.
+- Seven automated tests pass; syntax and whitespace checks pass. Browser verified four loaded photographs, working photo dialog, correct generated mailto recipient, and successful WeChat copy. No email sent.
+- Desktop has no horizontal overflow. At a 390-pixel viewport, gallery stacks and document width equals visible width (375 pixels after scrollbar). Fixed low-contrast secondary contacts identified in mobile visual QA.
+- Local preview only; no production deployment or email deliverability verification.
+
 ## Revision 2
 
 - Replaced the old-factory collage with the user's two confirmed new-factory photos, preserving full compositions and encoding as WebP.
@@ -31,7 +40,7 @@
 ## Remaining before production
 
 - Connect a commercial hosting provider to the existing domain; no production deployment was performed in this revision.
-- Confirm the long-term sales inbox. Current email and telephone match the company's public contact page.
+- User-confirmed sales contacts are now installed (Revision 4); verify inbox deliverability before launch.
 - Optional next phase: a server-side inquiry endpoint, delivery monitoring and CRM routing. Current form is an explicit email-brief workflow, not an automatic submission service.
 - Add approved grade-level data sheets, certificate files, exact manufacturing capacity and logistics terms only after the company provides them.
 - End-to-end email delivery and every customer's email application behavior have not been tested. Copy and text download are available when an email handler is unavailable.
