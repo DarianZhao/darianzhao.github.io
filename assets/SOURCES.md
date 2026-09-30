@@ -11,10 +11,14 @@ Prepared 2026-09-29. This file is a maintenance record, not part of navigation.
 - *-video-poster.jpg: frame extracted at 1 second from the matching video; no synthetic product imagery.
 - trf-logo.webp: https://tpeaelastomer.com/wp-content/uploads/2026/02/TRF-LOGO-img.webp
 - pellets.webp: https://tpeaelastomer.com/wp-content/uploads/2026/03/Elastomeric-Plastic-Granules-Supplier-768x768.webp
-- factory.webp: https://tpeaelastomer.com/wp-content/uploads/2026/03/company-profile-pic.webp
+- factory.webp: former factory collage from the original company website; retired from the page at the user's request, retained only as an unused source asset.
+- factory-campus.webp: user-confirmed new campus photograph 修图-办公楼东方.png, from the iCloud company media library; WebP encoding only, composition preserved.
+- factory-office.webp: user-confirmed new office photograph 修图-公司.png from the same library; WebP encoding only, composition preserved.
 - automotive.webp: https://tpeaelastomer.com/wp-content/uploads/2026/03/auto-application-pic-768x498.webp
 - cable.webp: https://tpeaelastomer.com/wp-content/uploads/2026/03/wire-application-pic-768x501.webp
 - medical.webp: https://tpeaelastomer.com/wp-content/uploads/2026/03/medical-application-pic-768x496.webp
 - material-hero.webp: https://tpeaelastomer.com/wp-content/uploads/2026/02/tpu-raw-material-ldp-banner-1024x640.webp (reserved, not displayed).
 
 The public website images are company-provided illustrative assets; their original photography provenance has not been independently verified. Certificates shown in source videos have not been independently audited. No additional approval claims were added to the web copy.
+
+Facebook link supplied by the user: https://www.facebook.com/share/1CfoK93GjA/?mibextid=wwXIfr . The share URL is used as supplied, not guessed into a canonical profile URL. Instagram and LinkedIn URLs were not located in the scoped media/project records; no placeholder or inferred profile links were published.

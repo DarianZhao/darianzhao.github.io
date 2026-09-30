@@ -1,5 +1,14 @@
 # TERRIFIC preview verification — 2026-09-29
 
+## Revision 2
+
+- Replaced the old-factory collage with the user's two confirmed new-factory photos, preserving full compositions and encoding as WebP.
+- Verified both new image references in the rendered page. Campus photo opens in the photo dialog and loads at its original 1672 × 941 dimensions.
+- Browser confirms exactly TPE, TPV, TPU and TPSiV in the material table; no TPR remains in visible page text.
+- Added the user-supplied Facebook share URL in the selected-video section and footer, with new-tab behavior and noopener/noreferrer.
+- External Facebook destination could not be independently fetched; the supplied URL was preserved exactly. Instagram/LinkedIn were not inferred.
+- Existing six tests and JavaScript syntax checks pass. Mobile 390-pixel viewport has no horizontal overflow or broken images.
+
 ## Verified
 
 - Six repository tests pass: homepage anchors and local assets, portfolio/application mappings and media references, canonical domain, dependency-free static output, and existing continuous-improvement files.
