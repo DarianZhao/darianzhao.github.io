@@ -3,6 +3,7 @@
 Revision 3 replaces the campus feature and adds a facility gallery from four files supplied by the user on the shared volume:
 - factory-campus-v3.webp: /Volumes/市场共享文件夹/chat4.png
 - research-workspace.webp: /Volumes/市场共享文件夹/研发产地.png
+  - User clarification, 2026-09-30: this photograph shows small laboratory R&D trial lines, not full-scale manufacturing lines. Keep that distinction explicit in the caption and alt text; do not use this photo to illustrate production capacity.
 - research-team.webp: /Volumes/市场共享文件夹/研发.png
 - factory-office-v3.webp: /Volumes/市场共享文件夹/3、图片类/修图-公司.png
 
