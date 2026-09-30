@@ -41,3 +41,7 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+
+# Retired internal system: publish only the empty return-to-home page.
+/continuous-improvement/*
+!/continuous-improvement/index.html
