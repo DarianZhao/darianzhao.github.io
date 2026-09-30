@@ -7,6 +7,14 @@
 - Browser confirms all four images loaded, no desktop or mobile horizontal overflow, and successful workspace/team photo dialogs.
 - Six existing tests, script syntax validation and whitespace checks pass. No production deployment performed.
 
+## Revision 5 — user-selected bright photos and earlier videos
+
+- Restored the four user-supplied processed photos (campus, workspace, team, office). Replaced clickable photo buttons with static image containers and removed photo event handlers, enlargement icons and hover scaling.
+- Videos now follow applications and precede company evidence; added Videos navigation and updated section numbering.
+- Browser click on the campus image opens no dialog; all four images load and have no transform. Both confirmed email links and WeChat remain unchanged.
+- Seven tests, script syntax and whitespace checks pass. Desktop width 1425 equals scroll width; mobile width 375 equals scroll width with a single-column gallery. Mobile Videos navigation closes the menu correctly.
+- Local preview only. Disabling site-provided photo enlargement does not prevent browser zoom or opening an image through browser controls.
+
 ## Revision 4
 
 - Replaced all four processed facility photographs with natural-detail alternatives from the shared company image library. No reconstructed text, generated scenery or structural retouching. WebP delivery at 2048 pixels wide; prior files retained for rollback.

@@ -20,7 +20,6 @@
       if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom) dialog.close();
     }});
     dialog.addEventListener('close', () => {
-      dialog.classList.remove('photo-dialog');
       document.body.style.overflow = '';
       if (dialog.id === 'video-dialog') {
         $('#application-video').pause();
@@ -70,18 +69,6 @@
     openDialog(detail,trigger);
   }
   document.querySelectorAll('[data-application]').forEach(button=>button.addEventListener('click',()=>showApplication(button.dataset.application,button)));
-  const factoryPhotos = {
-    campus:{src:'./assets/factory-campus-natural.webp',title:'The TERRIFIC campus',alt:'Aerial view of the TERRIFIC factory campus in Shandong'},
-    workspace:{src:'./assets/research-workspace-natural.webp',title:'Inside our development workspace',alt:'TERRIFIC research and development workspace'},
-    team:{src:'./assets/research-at-work.webp',title:'The people behind the material',alt:'TERRIFIC colleagues working with development equipment'},
-    office:{src:'./assets/factory-office-natural.webp',title:'A closer look at TERRIFIC',alt:'The TERRIFIC office building and company signage'}
-  };
-  document.querySelectorAll('[data-factory]').forEach(button=>button.addEventListener('click',()=>{
-    const photo=factoryPhotos[button.dataset.factory];
-    detail.classList.add('photo-dialog');
-    $('#detail-content').innerHTML='<div class="photo-detail"><h2 id="detail-title">'+esc(photo.title)+'</h2><img src="'+photo.src+'" alt="'+esc(photo.alt)+'"><p>Shandong Terrific New Materials Co., Ltd. · Shandong, China</p></div>';
-    openDialog(detail,button);
-  }));
   $('#material-rows').innerHTML=materials.map(material=>'<div class="material-row" role="row"><div class="material-name" role="cell"><strong>'+esc(material.id)+'</strong><small>'+esc(material.name)+'</small></div><div class="material-summary" role="cell">'+esc(material.summary)+'</div><div class="material-traits" role="cell">'+esc(material.traits)+'</div><div role="cell"><button type="button" data-material="'+esc(material.id)+'" aria-label="Explore '+esc(material.id)+'">↗</button></div></div>').join('');
   document.querySelectorAll('[data-material]').forEach(button=>button.addEventListener('click',()=>{
     const material=materials.find(item=>item.id===button.dataset.material);
