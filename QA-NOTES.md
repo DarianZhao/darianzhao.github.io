@@ -1,5 +1,12 @@
 # TERRIFIC preview verification — 2026-09-29
 
+## Revision 7 — brighter background palette
+
+- Palette-only refresh: pure white page/header/footer, near-white cool company/process sections, and pale ice-blue finder/inquiry sections replacing large navy backgrounds. Retained navy action buttons and brand accents.
+- Updated previously inverse text and WeChat styles for light surfaces. Photos, typography, layout, content, section order, contacts and interaction logic unchanged; HTML change is only asset cache version.
+- Browser confirms intended backgrounds, desktop and mobile widths without horizontal overflow. Inspected inquiry screen at both widths. Sampled finder/inquiry descriptive text contrast is 4.95:1; secondary email 5.59:1; WeChat number/button 13.49:1 against their section backgrounds.
+- Eight existing tests and whitespace checks pass. Local preview only; no production deployment.
+
 ## Revision 6 — company overview and six application sectors
 
 - Added company-supplied annual capacity, pelletizing-line count, R&D area and production area in a four-metric company overview. Explicitly distinguishes annual capacity from actual yearly output; no guaranteed lead time inferred.
